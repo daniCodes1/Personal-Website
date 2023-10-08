@@ -6,36 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Website</title>
     <!--link to css file: -->
-    '
-
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <!-- Navigation bar Section -->
   <body>
     <nav class="nav">
-      <div class="nav_container">
-        <a href="#home" id="nav_logo">WELCOME</a>
-        <!-- changed ul to <menu>, menu more interactive, will connect to JS too-->
-        <menu class="nav_menu">
-          <li class="nav_item">
-            <a href="#home" class="nav_links" id="home-page">Home</a>
+      <div class="nav__container">
+        <a href="#home" id="nav__title">WELCOME</a>
+        <!-- changed ul to <menu>, menu is more interactive, will connect to JS too-->
+        <menu class="nav__menu">
+          <li class="nav__item">
+            <a href="#home" class="nav__links" id="home-page">Home</a>
           </li>
-          <li class="nav_item">
-            <a href="#about" class="nav_links" id="about-page">About</a>
+          <li class="nav__item">
+            <a href="#about" class="nav__links" id="about-page">About</a>
           </li>
-          <li class="nav_item">
-            <a href="#projects" class="nav_links" id="projects-page"
+          <li class="nav__item">
+            <a href="#projects" class="nav__links" id="projects-page"
               >Projects</a
             >
           </li>
-          <li class="nav_btn">
+          <li class="nav__btn">
             <a href="#contact" class="button" id="contact">Contact</a>
           </li>
         </menu>
       </div>
     </nav>
 
+    <!-- connect to JS -->
     <script src="app.js"></script>
   </body>
 </html>
