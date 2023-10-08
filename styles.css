@@ -1,9 +1,9 @@
 * {
   box-sizing: border-box;
-  /* text-align: center; */
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", "cursive";
+  scroll-behavior: smooth;
 }
 
 .nav {
@@ -15,17 +15,19 @@
   font-size: 1.4rem;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 100;
 }
 
 .nav__container {
   display: flex;
   justify-content: space-between;
   height: 100px;
-  z-index: 100;
+  z-index: 1;
   width: 100%;
   max-width: 1280px;
-  margin: 0 0; /* top&bottom left&right*/
+  margin: 0 20px; /* top&bottom left&right*/
+  /* padding: 0 15px; */
+  padding: 0 0;
 }
 
 /* id: nav__title */
@@ -36,16 +38,18 @@
   background-size: 100%;
   -webkit-background-clip: text;
   background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
   display: flex;
   align-items: center;
   font-size: 2.5rem;
+  font-weight: bold;
   cursor: pointer; /* changes to a hand to indicate a link */
   text-decoration: none; /* remove link line */
 }
 
 .nav__menu {
   display: flex;
-  align-items: center;
   list-style: none; /* remove bullet points */
 }
 
@@ -57,8 +61,7 @@
   color: #fff;
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 200px; /* controls distance from title */
+  width: 150px; /* controls distance from title */
   text-decoration: none; /* remove link line */
   height: 100%;
 }
@@ -68,11 +71,20 @@
   color: #4ca1af;
 }
 
-.button {
+.nav__btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none; /* get rid of link line*/
+  padding: 0 1rem; /* top+bottom left+right */
+  width: 100%;
+}
+
+.button {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; /* get rid of link underline*/
   padding: 15px 30px;
   border: none;
   outline: none;
@@ -80,5 +92,102 @@
   background: #4ca1af;
   background: -webkit-linear-gradient(to right, #c4e0e5, #4ca1af);
   background: linear-gradient(to right, #c4e0e5, #4ca1af);
-  color: #fff;
+}
+
+/* for when screen is minimized, 700px or less */
+@media screen and (max-width: 700px) {
+  .nav__container {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1280px;
+  }
+
+  .nav__menu {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: -1000px; /*this is the drop down effect */
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: -1;
+  }
+
+  .nav__menu.active {
+    background: #a4ddf3;
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 75;
+    height: 60vh;
+    font-size: 1.6rem;
+  }
+
+  #nav__title {
+    padding-left: 25px;
+  }
+
+  .nav__toggle .option {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #fff; /* colour of the 3 lines*/
+  }
+
+  .nav__item {
+    width: 100%;
+  }
+
+  .nav__links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav__btn {
+    padding-bottom: 1rem;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 80px;
+  }
+
+  #menu-icon {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    transform: translate(5%, 30%);
+  }
+
+  .nav__toggle .option {
+    display: block;
+    cursor: pointer;
+  }
+
+  /*animation*/
+
+  /* we want the menu icon to turn into an x */
+  /* we are targetting the second child in html to disappear*/
+  #menu-icon.is-active .option:nth-child(2) {
+    opacity: 0;
+  }
+
+  /* the rotate makes the lines into the X*/
+  #menu-icon.is-active .option:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #menu-icon.is-active .option:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 }
