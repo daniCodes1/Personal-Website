@@ -309,4 +309,34 @@
 .about__content p {
   font-size: 25px;
   color: #0c8b9e;
+  margin-top: 20px;
+}
+
+.about__btn {
+  font-size: 20px;
+  background: #e888bb;
+  padding: 15px 40px;
+  border-radius: 12px; /* makes corners round :) */
+  margin-top: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* a element */
+.about__btn a {
+  position: relative;
+  z-index: 5;
+  color: #fff;
+  text-decoration: none;
+}
+
+.about__btn:after {
+  position: absolute;
+  /* content: " "; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #e888bb;
+  border-radius: 12px;
 }
