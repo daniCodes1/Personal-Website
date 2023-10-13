@@ -241,12 +241,21 @@
     #0082c8,
     #667db6
   );
-
   background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
-
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* HOME SCREEN for when screen is minimized, 700px or less */
+@media screen and (max-width: 700px) {
+  .home__heading {
+    font-size: 75px;
+  }
+
+  .home__description {
+    font-size: 50px;
+  }
 }
