@@ -221,8 +221,8 @@
 .home__heading span {
   font-size: 75px;
   background: #373b44; /* old browsers */
-  background: -webkit-linear-gradient(to right, #4286f4, #373b44);
-  background: linear-gradient(to right, #4286f4, #373b44);
+  background: -webkit-linear-gradient(to right, #c4e0e5, #4ca1af);
+  background: linear-gradient(to right, #c4e0e5, #4ca1af);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -258,4 +258,55 @@
   .home__description {
     font-size: 50px;
   }
+}
+
+/* About Section*/
+.about__section {
+  background-color: #ffe1e6;
+  padding: 10rem 0;
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: 590px 590px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0;
+  z-index: 1;
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 50px;
+}
+
+.about__content {
+  color: #fff;
+}
+
+.about__content h1 {
+  font-size: 75px;
+  background: -webkit-linear-gradient(to right, #acc8cd, #04525e);
+  background: linear-gradient(to right, #acc8cd, #04525e);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.about__content h2 {
+  font-size: 50px;
+  background: -webkit-linear-gradient(to right, #c4e0e5, #4ca1af);
+  background: linear-gradient(to right, #c4e0e5, #4ca1af);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.about__content p {
+  font-size: 25px;
+  color: #0c8b9e;
 }
