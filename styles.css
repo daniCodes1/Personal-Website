@@ -315,6 +315,7 @@
 .about__btn {
   font-size: 20px;
   background: #e888bb;
+  color: #fff;
   padding: 15px 40px;
   border-radius: 12px; /* makes corners round :) */
   margin-top: 20px;
@@ -332,11 +333,20 @@
 
 .about__btn:after {
   position: absolute;
-  /* content: " "; */
+  content: " ";
   top: 0;
   left: 0;
   width: 0;
   height: 100%;
-  background: #e888bb;
+  background: #c54b8c;
+  transition: all 0.4s;
   border-radius: 12px;
+}
+
+.about__btn:hover {
+  color: #4ca1af;
+}
+
+.about__btn:hover:after {
+  width: 100%;
 }
