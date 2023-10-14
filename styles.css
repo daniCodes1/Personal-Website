@@ -469,3 +469,12 @@
   background-clip: content-box, border-box;
   box-shadow: 2px 1000px 1px #fff inset;
 }
+.projects__card button:hover {
+  cursor: pointer;
+}
+
+.projects__card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition-duration: 1s;
+}
