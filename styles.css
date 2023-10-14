@@ -344,7 +344,8 @@
   justify-content: center;
 }
 
-.fa-rocket {
+.fa-rocket,
+.fa-people-group {
   font-size: 200px;
 }
 
@@ -477,4 +478,16 @@
   transform: scale(1.1);
   cursor: pointer;
   transition-duration: 1s;
+}
+
+@media screen and (max-width: 1300px) {
+  .projects__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .projects__wrapper {
+    grid-template-columns: 1fr;
+  }
 }
