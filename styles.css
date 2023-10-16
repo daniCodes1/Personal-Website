@@ -547,3 +547,23 @@
   align-items: center;
   margin: 10px;
 }
+
+.social__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  margin: 15px;
+}
+
+.social__icon--link {
+  color: #fff;
+  text-decoration: none;
+  margin: 7px;
+}
+
+.fa-envelope,
+.fa-github,
+.fa-linkedin {
+  font-size: 20px;
+}
