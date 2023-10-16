@@ -88,7 +88,7 @@
 }
 
 /* for when screen is minimized, 700px or less */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .nav__container {
     display: flex;
     justify-content: space-between;
@@ -248,7 +248,7 @@
   grid-template-columns: 590px 590px;
   align-items: center;
   justify-content: center;
-  margin: 20px 20px;
+
   z-index: 1;
   width: 100%;
   max-width: 1280px;
@@ -336,8 +336,8 @@
   color: #fff;
   background-image: linear-gradient(TO RIGHT, #eeaeca, #94bbe9 100%);
   margin: 30px;
-  height: 500px;
-  width: 500px;
+  height: 450px;
+  width: 450px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -350,7 +350,7 @@
 }
 
 /* For minimized screen*/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1100px) {
   .about__container {
     display: grid;
     grid-template-columns: 1fr;
@@ -365,8 +365,8 @@
   }
 
   .about__img--card {
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 450px;
   }
 
   .fa-rocket {
@@ -380,16 +380,19 @@
   .about__content h1 {
     font-size: 75px;
     margin-top: 35px;
+    text-align: center;
   }
 
   .about__content h2 {
     margin-top: 35px;
     font-size: 50px;
+    text-align: center;
   }
 
   .about__content p {
     margin-top: 30px;
     font-size: 20px;
+    text-align: center;
   }
 
   .about__btn {
@@ -490,4 +493,57 @@
   .projects__wrapper {
     grid-template-columns: 1fr;
   }
+}
+
+/* Footer */
+.footer__section {
+  background-color: #707070;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__links {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  text-align: center;
+}
+
+#footer__title {
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.footer__links a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer__links a:hover {
+  color: #ffe1e6;
+}
+
+.social__media {
+  width: 100%;
+}
+
+.social__media--section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
 }
