@@ -25,9 +25,6 @@
   z-index: 1;
   width: 100%;
   max-width: 1280px;
-  margin: 0 20px; /* top&bottom left&right*/
-  /* padding: 0 15px; */
-  padding: 0 0;
 }
 
 /* id: nav__title */
@@ -54,6 +51,7 @@
   color: #fff;
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 150px; /* controls distance from title */
   text-decoration: none; /* remove link line */
   height: 100%;
@@ -62,6 +60,10 @@
 /* control what happens when you hover over it*/
 .nav__links:hover {
   color: #4ca1af;
+}
+
+.scroll {
+  border-bottom: 10px solid #4ca1af;
 }
 
 .nav__btn {
@@ -199,7 +201,6 @@
   align-items: center;
   max-width: 1280px;
   margin: 0 auto;
-  /* height: 90%; */
   text-align: center;
   padding: 50px 200px;
 }
@@ -222,7 +223,6 @@
 .home__description {
   font-size: 45px;
   font-family: "Bradley Hand", "cursive";
-
   color: #4ca1af;
 }
 
