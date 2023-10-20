@@ -48,3 +48,14 @@ if ((elem && window.innerWidth < 960 && scrollPos < 550) || elem) {
 window.addEventListener('scroll', highlightMenu)
 window.addEventListener('click', highlightMenu)
 
+// remove the drop down menu as soon as an option
+const hideDropDown = () => {
+    const menuOptions = document.querySelector('.is-active')
+    if (window.innerWidth <= 768 && menuOptions) {
+        menu.classList.toggle('is-active')
+        menuLinks.classList.remove('active')
+    }
+}
+
+menuLinks.addEventListener('click', hideDropDown)
+navTitle.addEventListener('click', hideDropDown)
