@@ -74,6 +74,45 @@
   width: 100%;
 }
 
+.main__btn {
+  font-size: 20px;
+  background: #e888bb;
+  color: #fff;
+  padding: 15px 40px;
+  border-radius: 12px; /* makes corners round :) */
+  margin-top: 20px;
+  cursor: pointer;
+  position: relative;
+  width: 25%;
+}
+
+.main__btn a {
+  position: relative;
+  z-index: 5;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main__btn:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #c54b8c;
+  transition-duration: 1s;
+  border-radius: 12px;
+}
+
+.main__btn:hover {
+  color: #4ca1af;
+}
+
+.main__btn:hover:after {
+  width: 100%;
+}
+
 .button {
   color: #fff;
   display: flex;
@@ -225,6 +264,45 @@
   font-size: 45px;
   font-family: "Bradley Hand", "cursive";
   color: #4ca1af;
+}
+
+.main__btn {
+  font-size: 20px;
+  background: #e888bb;
+  color: #fff;
+  padding: 15px 40px;
+  border-radius: 12px; /* makes corners round :) */
+  margin-top: 20px;
+  cursor: pointer;
+  position: relative;
+  width: 25%;
+}
+
+.main__btn a {
+  position: relative;
+  z-index: 5;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main__btn:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #c54b8c;
+  transition-duration: 1s;
+  border-radius: 12px;
+}
+
+.main__btn:hover {
+  color: #4ca1af;
+}
+
+.main__btn:hover:after {
+  width: 100%;
 }
 
 /* HOME SCREEN for when screen is minimized, 700px or less */
@@ -475,6 +553,7 @@
   background-clip: content-box, border-box;
   box-shadow: 2px 1000px 1px #fff inset;
 }
+
 .projects__card button:hover {
   cursor: pointer;
 }
