@@ -29,6 +29,7 @@
 
 /* id: nav__title */
 #nav__title {
+  margin-left: 25px;
   color: #4ca1af;
   display: flex;
   align-items: center;
@@ -66,66 +67,30 @@
   border-bottom: 10px solid #4ca1af;
 }
 
-.nav__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1rem; /* top+bottom left+right */
-  width: 100%;
-}
-
-.main__btn {
-  font-size: 20px;
-  background: #e888bb;
-  color: #fff;
-  padding: 15px 40px;
-  border-radius: 12px; /* makes corners round :) */
-  margin-top: 20px;
-  cursor: pointer;
-  position: relative;
-  width: 25%;
-}
-
-.main__btn a {
-  position: relative;
-  z-index: 5;
-  color: #fff;
-  text-decoration: none;
-}
-
-.main__btn:after {
-  position: absolute;
-  content: " ";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #c54b8c;
-  transition-duration: 1s;
-  border-radius: 12px;
-}
-
-.main__btn:hover {
-  color: #4ca1af;
-}
-
-.main__btn:hover:after {
-  width: 100%;
-}
-
 .button {
   color: #fff;
+  font-size: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   text-decoration: none; /* get rid of link underline*/
-  padding: 15px 30px;
+  padding: 30px 30px;
   border: none;
   outline: none;
+  margin: 10px 7px;
   border-radius: 10px;
   background: #4ca1af;
   background: -webkit-linear-gradient(to right, #c4e0e5, #4ca1af);
   background: linear-gradient(to right, #c4e0e5, #4ca1af);
+}
+
+.button a {
+  height: 90px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; /* remove link line */
+  height: 100%;
 }
 
 /* for when screen is minimized, 700px or less */
@@ -159,6 +124,10 @@
     z-index: 75;
     height: 60vh;
     font-size: 1.6rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 
   #nav__title {
@@ -182,10 +151,6 @@
     padding: 2rem;
     width: 100%;
     display: table;
-  }
-
-  .nav__btn {
-    padding-bottom: 1rem;
   }
 
   .button {
@@ -523,11 +488,20 @@
   margin-bottom: 15px;
 }
 
-.projects__card p {
+.projects__card h3 {
   text-align: center;
   margin-left: 25px;
   margin-right: 25px;
-  font-size: 20px;
+  font-size: 16px;
+}
+
+.projects__card p {
+  font-family: "Bradley Hand", "Helvetica", "cursive";
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 13px;
 }
 
 .project__btn {
@@ -536,13 +510,16 @@
   margin-top: 25px;
 }
 
-.projects__card button {
-  border-radius: 16px;
+.projects__card a {
+  text-decoration: none;
+}
 
+.projects__card button {
+  text-decoration: none;
+  border-radius: 16px;
   font-size: 20px;
   padding: 14px 24px;
   color: #000;
-
   border: solid 6px transparent;
   background-image: linear-gradient(
       rgba(255, 255, 255, 0),
