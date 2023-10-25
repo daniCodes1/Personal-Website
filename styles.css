@@ -239,8 +239,7 @@
   border-radius: 12px; /* makes corners round :) */
   margin-top: 20px;
   cursor: pointer;
-  position: relative;
-  width: 25%;
+  position: sticky;
 }
 
 .main__btn a {
@@ -278,6 +277,18 @@
 
   .home__description {
     font-size: 50px;
+  }
+
+  .main__btn {
+    font-size: 20px;
+    background: #e888bb;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 12px; /* makes corners round :) */
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
   }
 }
 
