@@ -147,6 +147,59 @@
             <a href="mailto:danirenn16@gmail.com">Email me</a>
           </button>
         </div>
+        <!-- <div class="form__section" id="forms">
+          <h1>Or fill out a form:</h1>
+          <form>
+            Email: <input type="email" name="email" /><br />
+            Question:
+            <textarea type="text" name="question"> </textarea>
+          </form>
+        </div> -->
+
+        <div class="form__section">
+          <form action="action_page.php">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+
+            <label for="mail">Email</label>
+            <input
+              type="email"
+              id="mail"
+              name="youremail"
+              placeholder="Your email.."
+            />
+            <label for="question">Question</label>
+            <textarea
+              id="question"
+              name="question"
+              placeholder="Write something.."
+              style="height: 200px"
+            ></textarea>
+
+            <label for="pizza">Does pineapple belong on pizza?</label>
+            <select id="pizza" name="pizza">
+              <option value="any">No preference</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+
         <div class="about__img--container">
           <div class="about__img--card">
             <i class="fas fa-people-group"></i>
