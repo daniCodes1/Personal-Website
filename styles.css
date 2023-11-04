@@ -311,11 +311,13 @@
   display: flex;
   flex-direction: column;
   
+  
 }
 
 .about__content {
   color: #fff;
 }
+
 
 .about__content h1 {
   font-size: 75px;
@@ -345,7 +347,9 @@
   font-size: 25px;
   color: #0c8b9e;
   margin-top: 20px;
+
 }
+
 
 .about__btn {
   font-size: 20px;
@@ -458,6 +462,8 @@
     margin: 20px 5px;
   }
 }
+
+
 
 /* Projects Section */
 
@@ -574,9 +580,9 @@
 .form__section {
   border-radius: 10px;
   background-color: #ffe1e6;
-  padding: 200px; 
-}
+  padding: 15px 70px;
 
+}
 
 /* text = first, last name  */
 /* textarea = question  */
@@ -585,10 +591,11 @@ input[type="text"],
 select,
 textarea {
   width: 100%; 
+
   padding: 20px;
   border: 1px solid #7d7070; /* border colour */
   border-radius: 10px; 
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
+
   margin-top: 10px; 
   margin-bottom: 15px; 
   resize: vertical; 
@@ -609,6 +616,19 @@ textarea {
   resize: vertical; 
   font-size: 15px;
 }
+
+/* Submit button */
+input[type="submit"] {
+  font-size: 20px;
+  background: #e888bb;
+  color: #fff;
+  padding: 15px 40px;
+  border-radius: 12px; /* makes corners round :) */
+  margin-top: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
 
 
 /* Footer */
