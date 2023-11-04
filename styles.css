@@ -340,6 +340,12 @@
   -moz-text-fill-color: transparent;
 }
 
+.about__content h3 {
+  margin-top: 70px;
+  font-size: 40px;
+  color: #61a8b3;
+}
+
 .about__content p {
   font-size: 35px;
   color: #0c8b9e;
@@ -454,6 +460,12 @@
     text-align: center;
   }
 
+  .about__content h3 {
+    margin-top: 70px;
+    font-size: 25px;
+    color: #61a8b3;
+  }
+
   .about__content p {
     margin-top: 70px;
     font-size: 20px;
@@ -511,6 +523,12 @@
   margin-bottom: 15px;
 }
 
+.projects__card h3 {
+  text-align: center;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 16px;
+}
 
 .projects__card p {
   font-family: "Bradley Hand", "Helvetica", "cursive";
