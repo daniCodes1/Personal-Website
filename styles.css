@@ -556,6 +556,12 @@
   transition-duration: 1s;
 }
 
+.form__section {
+  border-radius: 10px;
+  background-color: #ffe1e6;
+  padding: 200px; 
+}
+
 
 @media screen and (max-width: 1300px) {
   .projects__wrapper {
