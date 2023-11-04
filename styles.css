@@ -308,6 +308,10 @@
   width: 100%;
   max-width: 1280px;
   padding: 0 50px;
+
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .about__content {
@@ -551,6 +555,7 @@
   cursor: pointer;
   transition-duration: 1s;
 }
+
 
 @media screen and (max-width: 1300px) {
   .projects__wrapper {
