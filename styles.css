@@ -257,7 +257,6 @@
   width: 0;
   height: 100%;
   background: #c54b8c;
-  transition-duration: 1s;
   border-radius: 12px;
 }
 
@@ -375,12 +374,12 @@
   width: 0;
   height: 100%;
   background: #c54b8c;
-  transition-duration: 1s;
+
   border-radius: 12px;
 }
 
 .about__btn:hover {
-  color: #4ca1af;
+  color: #c54b8c;
 }
 
 .about__btn:hover:after {
@@ -556,13 +555,6 @@
   transition-duration: 1s;
 }
 
-.form__section {
-  border-radius: 10px;
-  background-color: #ffe1e6;
-  padding: 200px; 
-}
-
-
 @media screen and (max-width: 1300px) {
   .projects__wrapper {
     grid-template-columns: 1fr 1fr;
@@ -574,6 +566,50 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Contact Form Section */
+/* The rest of the Contact section uses the same styling as the About section */
+
+
+.form__section {
+  border-radius: 10px;
+  background-color: #ffe1e6;
+  padding: 200px; 
+}
+
+
+/* text = first, last name  */
+/* textarea = question  */
+/* drop down = select*/
+input[type="text"],
+select,
+textarea {
+  width: 100%; 
+  padding: 20px;
+  border: 1px solid #7d7070; /* border colour */
+  border-radius: 10px; 
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 10px; 
+  margin-bottom: 15px; 
+  resize: vertical; 
+  font-size: 15px;
+}
+
+
+input[type="email"],
+select,
+textarea {
+  width: 100%; 
+  padding: 10px; /* Why does this make the email box less skinny */
+  border: 1px solid #7d7070; 
+  border-radius:10px; 
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 10px; 
+  margin-bottom: 15px; 
+  resize: vertical; 
+  font-size: 15px;
+}
+
 
 /* Footer */
 .footer__section {
