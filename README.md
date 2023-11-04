@@ -1,4 +1,4 @@
 # Personal-Website
 Currently: In progress ☺
 
-Keep updated [here](daniCodes1.github.io)!
+Keep updated [here](https://daniCodes1.github.io)!
