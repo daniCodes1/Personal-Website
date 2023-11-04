@@ -629,6 +629,9 @@ input[type="submit"] {
   position: relative;
 }
 
+input[type="submit"]:hover {
+  background-color: #c54b8c;
+}
 
 
 /* Footer */
