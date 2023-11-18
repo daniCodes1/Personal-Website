@@ -35,13 +35,16 @@
   align-items: center;
   font-size: 2.5rem;
   font-weight: bold;
-  cursor: pointer; /* changes to a hand to indicate a link */
-  text-decoration: none; /* remove link line */
+  cursor: pointer;
+  /* changes to a hand to indicate a link */
+  text-decoration: none;
+  /* remove link line */
 }
 
 .nav__menu {
   display: flex;
-  list-style: none; /* remove bullet points */
+  list-style: none;
+  /* remove bullet points */
 }
 
 .nav__item {
@@ -53,8 +56,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 150px; /* controls distance from title */
-  text-decoration: none; /* remove link line */
+  width: 150px;
+  /* controls distance from title */
+  text-decoration: none;
+  /* remove link line */
   height: 100%;
 }
 
@@ -72,7 +77,8 @@
   font-size: 20px;
   display: flex;
   position: relative;
-  text-decoration: none; /* get rid of link underline*/
+  text-decoration: none;
+  /* get rid of link underline*/
   padding: 30px 30px;
   border: none;
   outline: none;
@@ -89,7 +95,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none; /* remove link line */
+  text-decoration: none;
+  /* remove link line */
   height: 100%;
 }
 
@@ -110,7 +117,8 @@
     margin: 0;
     width: 100%;
     position: absolute;
-    top: -1000px; /*this is the drop down effect */
+    top: -1000px;
+    /*this is the drop down effect */
     opacity: 1;
     transition: all 0.5s ease;
     z-index: -1;
@@ -139,7 +147,8 @@
     height: 3px;
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
-    background: #fff; /* colour of the 3 lines*/
+    background: #fff;
+    /* colour of the 3 lines*/
   }
 
   .nav__item {
@@ -200,7 +209,8 @@
 
 .home__container {
   display: flex;
-  flex-direction: column; /* vertical items*/
+  flex-direction: column;
+  /* vertical items*/
   justify-content: center;
   align-items: center;
   max-width: 1280px;
@@ -213,7 +223,8 @@
   font-size: 100px;
   margin-bottom: 30px;
   margin-top: 75px;
-  background: #373b44; /* old browsers */
+  background: #373b44;
+  /* old browsers */
   background: -webkit-linear-gradient(to right, #c4e0e5, #4ca1af);
   background: linear-gradient(to right, #c4e0e5, #4ca1af);
   background-size: 100%;
@@ -236,7 +247,8 @@
   background: #e888bb;
   color: #fff;
   padding: 15px 40px;
-  border-radius: 12px; /* makes corners round :) */
+  border-radius: 12px;
+  /* makes corners round :) */
   margin-top: 20px;
   cursor: pointer;
   position: sticky;
@@ -283,7 +295,8 @@
     background: #e888bb;
     color: #fff;
     padding: 15px 40px;
-    border-radius: 12px; /* makes corners round :) */
+    border-radius: 12px;
+    /* makes corners round :) */
     margin-top: 20px;
     cursor: pointer;
     position: relative;
@@ -307,7 +320,7 @@
   z-index: 1;
   width: 100%;
   max-width: 1280px;
-  
+
 }
 
 .about__content {
@@ -359,7 +372,8 @@
   background: #e888bb;
   color: #fff;
   padding: 15px 40px;
-  border-radius: 12px; /* makes corners round :) */
+  border-radius: 12px;
+  /* makes corners round :) */
   margin-top: 20px;
   cursor: pointer;
   position: relative;
@@ -393,20 +407,9 @@
   width: 100%;
 }
 
-.about__img--container {
-  text-align: center;
-}
-
-.about__img--card {
-  color: #fff;
-  background-image: linear-gradient(TO RIGHT, #eeaeca, #94bbe9 100%);
-  margin: 30px;
-  height: 450px;
+img {
   width: 450px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  border-radius: 25px;
 }
 
 .fa-rocket,
@@ -556,10 +559,8 @@
   padding: 14px 24px;
   color: #000;
   border: solid 6px transparent;
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0)
-    ),
+  background-image: linear-gradient(rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)),
     linear-gradient(101deg, #78e4ff, #ff48fa);
   background-origin: border-box;
   background-clip: content-box, border-box;
@@ -605,15 +606,16 @@
 input[type="text"],
 select,
 textarea {
-  width: 100%; 
+  width: 100%;
 
   padding: 20px;
-  border: 1px solid #7d7070; /* border colour */
-  border-radius: 10px; 
+  border: 1px solid #7d7070;
+  /* border colour */
+  border-radius: 10px;
 
-  margin-top: 10px; 
-  margin-bottom: 15px; 
-  resize: vertical; 
+  margin-top: 10px;
+  margin-bottom: 15px;
+  resize: vertical;
   font-size: 15px;
 }
 
@@ -621,14 +623,16 @@ textarea {
 input[type="email"],
 select,
 textarea {
-  width: 100%; 
-  padding: 10px; /* Why does this make the email box less skinny */
-  border: 1px solid #7d7070; 
-  border-radius:10px; 
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 10px; 
-  margin-bottom: 15px; 
-  resize: vertical; 
+  width: 100%;
+  padding: 10px;
+  /* Why does this make the email box less skinny */
+  border: 1px solid #7d7070;
+  border-radius: 10px;
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 10px;
+  margin-bottom: 15px;
+  resize: vertical;
   font-size: 15px;
 }
 
@@ -638,7 +642,8 @@ input[type="submit"] {
   background: #e888bb;
   color: #fff;
   padding: 15px 40px;
-  border-radius: 12px; /* makes corners round :) */
+  border-radius: 12px;
+  /* makes corners round :) */
   margin-top: 20px;
   cursor: pointer;
   position: relative;
