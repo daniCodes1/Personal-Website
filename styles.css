@@ -7,7 +7,7 @@
 }
 
 .nav {
-  background: #ffcbd3;
+  background: #d2cdce;
   height: 100px;
   justify-content: center;
   display: flex;
@@ -125,7 +125,7 @@
   }
 
   .nav__menu.active {
-    background: #a4ddf3;
+    background: #d2cdce;
     top: 100%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -203,7 +203,7 @@
 /* Home Section*/
 
 .home__section {
-  background: #ffe1e6;
+  background: #f9eff1;
   /* padding: 200px, 0; */
 }
 
@@ -306,7 +306,7 @@
 
 /* About Section*/
 .about__section {
-  background-color: #ffe1e6;
+  background-color: #f9eff1;
   padding: 10rem 10rem;
 }
 
@@ -486,7 +486,7 @@ img {
 /* Projects Section */
 
 .projects {
-  background: #ffe1e6;
+  background: #f9eff1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -595,7 +595,7 @@ img {
 
 .form__section {
   border-radius: 10px;
-  background-color: #ffe1e6;
+  background-color: #f9eff1;
   padding: 15px 70px;
 
 }
@@ -692,7 +692,7 @@ input[type="submit"]:hover {
 }
 
 .footer__links a:hover {
-  color: #ffe1e6;
+  color: #f9eff1;
 }
 
 .social__media {
