@@ -33,9 +33,11 @@
             <a href="#about" class="nav__links" id="about-page">About</a>
           </li>
           <li class="nav__item">
-            <a href="#projects" class="nav__links" id="projects-page">Projects</a>
+            <a href="#projects" class="nav__links"
+              id="projects-page">Projects</a>
           </li>
-          <button class="button"><a href="#contact">Contact</a></button>
+          <button class="contact__button"><a
+              href="#contact">Contact</a></button>
         </ul>
       </div>
     </nav>
@@ -43,9 +45,9 @@
     <div class="home__section" id="home">
       <div class="home__container">
         <h1 class="home__heading">
-          Welcome to my personal website!
+          Hi! I'm Dani, a third year computer science student at UBC.
         </h1>
-        <p class="home__description">Who am I?</p>
+        <p class="home__description">What else am I?</p>
         <button class="main__btn"><a href="#about">Let's find out</a></button>
       </div>
     </div>
@@ -53,18 +55,61 @@
     <!-- About Section -->
     <div class="about__section" id="about">
       <div class="about__container">
-        <!-- <div class="about__img--container"> -->
-        <!-- <div class="about__img--card"><i class="fas fa-rocket"></i></div> -->
         <img src="dani-pic.jpeg" alt="headshot picture">
-        <!-- </div> -->
         <div class="about__content">
-          <h1>YAY WEBSITE</h1>
-          <h2>I am...</h2>
-          <p class="about__description">
-            Pretend I typed a very long paragraph here just so I can use it as a
-            placeholder for now
-          </p>
-          <button class="about__btn"><a href="#projects">Projects</a></button>
+          <h1> Work Experience </h1>
+          <br>
+          <h2> CURRENT POSITION </h2>
+          <p> I'm currently an IT Technician at Immigration,
+            Citizenship and Refugees </p>
+          <br>
+          <h2> OTHER POSITIONS </h2>
+          <div class="work__table">
+            <h3> A quick rundown of my employment history (most of which were
+              part time). <br>
+              Fun fact: I love working with kids, which has been a hobby of over
+              5 years!
+            </h3>
+            <table class="table-style">
+              <tr>
+                <td>Computer Science Teaching Assistant</td>
+                <td> UBC </td>
+                <td> Sep 2022 - May 2023 </td>
+              </tr>
+              <tr>
+                <td>Instructor</td>
+                <td> Geering Up Engineering Outreach </td>
+                <td> June 2022 - Sep 2022 </td>
+              </tr>
+              <tr>
+                <td>Youth Leader</td>
+                <td> The Arbutus Club </td>
+                <td> Apr 2022 - present </td>
+              </tr>
+              <tr>
+                <td>Student Assistant</td>
+                <td> Burnaby School District </td>
+                <td> June 2020 - Aug 2021 </td>
+              </tr>
+              <tr>
+                <td>Brand Ambassador</td>
+                <td> American Eagle Outfitters </td>
+                <td> Jul 2019 - Nov 2021 </td>
+              </tr>
+              <tr>
+                <td>Cineplex Entertainment</td>
+                <td> Birthday Party Host </td>
+                <td> Jul 2018 - Sep 2019 </td>
+              </tr>
+            </table>
+          </div>
+
+          <br>
+
+          <!-- <br><h1> View my projects below!</h1> -->
+
+          <button class="about__btn"><a href="#projects">View Personal
+              Projects</a></button>
         </div>
       </div>
     </div>
@@ -76,7 +121,7 @@
 
     <!-- Projects Section -->
     <div class="projects" id="projects">
-      <h1>My projects</h1>
+      <h1>Projects</h1>
       <div class="projects__wrapper">
         <div class="projects__card">
           <h2>Personal Website</h2>
@@ -98,7 +143,8 @@
         <div class="projects__card">
           <h2>Movie Manager</h2>
           <h3>
-            Get personalized movie recommendations based on user preferences and
+            Get personalized movie recommendations based on user preferences
+            and
             then save your favourites
           </h3>
           <p>Java</p>
@@ -109,7 +155,8 @@
         <div class="projects__card">
           <h2>Enspo</h2>
           <h3>
-            A lookbook aesthetic generator for an improved shopping experience ,
+            A lookbook aesthetic generator for an improved shopping experience
+            ,
             created during Aritizia-sponsored hackathon
           </h3>
           <p>JavaScript, CSS, HTML</p>
@@ -135,16 +182,19 @@
     <div class="about__section" id="contact">
       <div class="about__container">
         <div class="about__content">
-          <h1>Contact me</h1>
+          <h1>Contact me! </h1>
+
           <!-- <h2>Email or box below</h2> -->
           <p class="about__description">
-            Any questions, concerns or just want to chat? I'd love to hear from
+            Any questions, concerns or just want to chat? I'd love to hear
+            from
             you!
           </p>
           <button class="about__btn">
             <a href="mailto:danirenn16@gmail.com">Email me</a>
           </button>
           <h3 class="about__description"> Or fill out the form ➜ </h3>
+
         </div>
 
         <div class="form__section">
@@ -185,37 +235,41 @@
 
             <input type="submit" value="Submit" />
           </form>
-        </div>
-      </div>
-    </div>
+          <form action="action_page.php">
 
-    <!-- Footer section -->
-    <div class="footer__section">
-      <div class="footer__links">
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#projects">PROJECTS</a>
-        <a href="#contact">CONTACT</a>
-      </div>
-      <section class="social__media">
-        <div class="social__media--section">
-          <div class="footer__title">
-            <a href="#contact" id="footer__title">REACH OUT</a>
-          </div>
-          <div class="social__icons">
-            <a href="https://github.com/danicodes1" class="social__icon--link"><i
-                class="fab fa-github"></i></a>
-            <a
-              href="https://ca.linkedin.com/in/dani-ren"
-              class="social__icon--link"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:danirenn16@gmail.com" class="social__icon--link"><i
-                class="fa fa-envelope"></i></a>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
 
-    <!-- connect to JS -->
-    <script src="app.js"></script>
-  </body>
-</html>
+      <!-- Footer section -->
+      <div class="footer__section">
+        <div class="footer__links">
+          <a href="#home">HOME</a>
+          <a href="#about">ABOUT</a>
+          <a href="#projects">PROJECTS</a>
+          <a href="#contact">CONTACT</a>
+        </div>
+        <section class="social__media">
+          <div class="social__media--section">
+            <div class="footer__title">
+              <a href="#contact" id="footer__title">REACH OUT</a>
+            </div>
+            <div class="social__icons">
+              <a href="https://github.com/danicodes1"
+                class="social__icon--link"><i
+                  class="fab fa-github"></i></a>
+              <a
+                href="https://ca.linkedin.com/in/dani-ren"
+                class="social__icon--link"><i class="fab fa-linkedin"></i></a>
+              <a href="mailto:danirenn16@gmail.com"
+                class="social__icon--link"><i
+                  class="fa fa-envelope"></i></a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- connect to JS -->
+      <script src="app.js"></script>
+    </body>
+  </html>
