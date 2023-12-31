@@ -68,11 +68,12 @@
   color: #4ca1af;
 }
 
+/* to control the thickness of the scroll bar */
 .scroll {
   border-bottom: 10px solid #4ca1af;
 }
 
-.button {
+.contact__button {
   color: #fff;
   font-size: 20px;
   display: flex;
@@ -89,7 +90,7 @@
   background: linear-gradient(to right, #c4e0e5, #4ca1af);
 }
 
-.button a {
+.contact__button a {
   height: 90px;
   color: #fff;
   display: flex;
@@ -204,7 +205,6 @@
 
 .home__section {
   background: #f9eff1;
-  /* padding: 200px, 0; */
 }
 
 .home__container {
@@ -220,9 +220,9 @@
 }
 
 .home__heading {
-  font-size: 100px;
+  font-size: 75px;
   margin-bottom: 30px;
-  margin-top: 75px;
+  margin-top: 100px;
   background: #373b44;
   /* old browsers */
   background: -webkit-linear-gradient(to right, #c4e0e5, #4ca1af);
@@ -234,8 +234,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* separated words in heading*/
-
 .home__description {
   font-size: 45px;
   font-family: "Bradley Hand", "cursive";
@@ -245,7 +243,6 @@
 .main__btn {
   font-size: 20px;
   background: #e888bb;
-  color: #fff;
   padding: 15px 40px;
   border-radius: 12px;
   /* makes corners round :) */
@@ -273,7 +270,7 @@
 }
 
 .main__btn:hover {
-  color: #4ca1af;
+  color: #c54b8c;
 }
 
 .main__btn:hover:after {
@@ -330,9 +327,9 @@
 
 
 .about__content h1 {
-  font-size: 75px;
-  background: -webkit-linear-gradient(to right, #acc8cd, #126b79);
-  background: linear-gradient(to right, #acc8cd, #04525e);
+  font-size: 30px;
+  background: -webkit-linear-gradient(to right, #798182, #161818);
+  background: linear-gradient(to right, #798182, #161818);
   background-size: 100%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -342,9 +339,9 @@
 }
 
 .about__content h2 {
-  font-size: 50px;
-  background: -webkit-linear-gradient(to right, #c4e0e5, #4ca1af);
-  background: linear-gradient(to right, #c4e0e5, #4ca1af);
+  font-size: 20px;
+  background: -webkit-linear-gradient(to right, #8ccdd8, #32a0b0);
+  background: linear-gradient(to right, #8ccdd8, #32a0b0);
   background-size: 100%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -354,18 +351,29 @@
 }
 
 .about__content h3 {
-  margin-top: 70px;
-  font-size: 40px;
-  color: #61a8b3;
+  font-size: 13px;
+  color: #636a6c;
 }
 
 .about__content p {
-  font-size: 35px;
-  color: #0c8b9e;
-  margin-top: 20px;
-
+  font-size: 15px;
+  color: #4e5758;
+  margin-top: 3px;
 }
 
+.tab {
+  margin-left: 30px;
+}
+
+table,
+td {
+  border: 1px solid;
+}
+
+td {
+  color: #494040;
+  font-size: 15px;
+}
 
 .about__btn {
   font-size: 20px;
@@ -412,10 +420,6 @@ img {
   border-radius: 25px;
 }
 
-.fa-rocket,
-.fa-people-group {
-  font-size: 200px;
-}
 
 /* For minimized screen*/
 @media screen and (max-width: 1100px) {
@@ -425,20 +429,6 @@ img {
     align-items: center;
     justify-content: center;
     width: 100%;
-  }
-
-  .about__img--container {
-    display: flex;
-    justify-content: center;
-  }
-
-  .about__img--card {
-    height: 450px;
-    width: 450px;
-  }
-
-  .fa-rocket {
-    font-size: 150px;
   }
 
   .about__content {
@@ -592,6 +582,38 @@ img {
 /* Contact Form Section */
 /* The rest of the Contact section uses the same styling as the About section */
 
+
+
+
+
+/*social media icons start */
+.contact__media {
+  width: 100%;
+}
+
+
+.contact__media--section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__media .fa-envelope,
+.contact__media .fa-github,
+.contact__media .fa-linkedin {
+  font-size: 50px;
+  color: #000;
+}
+
+.contact__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+/* social media icons end */
 
 .form__section {
   border-radius: 10px;
