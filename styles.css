@@ -724,6 +724,23 @@ input[type="submit"]:hover {
   background-color: #c54b8c;
 }
 
+body {
+  background-color: #f9eff1;
+  background-size: cover;
+}
+
+.thanks {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.thanks h2 {
+  margin-top: 40px;
+  text-align: center;
+}
+
 /* forms section ends */
 /* for minimized screen */
 
