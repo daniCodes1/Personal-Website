@@ -141,11 +141,6 @@
       </div>
     </div>
 
-    <!-- 
-    <a href="https://sentry.io/answers/">
-      <button>Answers by Sentry</button>
-    </a> -->
-
     <!-- Projects Section -->
     <div class="projects" id="projects">
       <h1>Projects</h1>
@@ -253,13 +248,14 @@
         </div>
 
         <div class="form__section">
-          <form action="action_page.php">
+          <form action="https://formsubmit.co/danirenn16@gmail.com"
+            method="POST">
             <label for="fname">First Name</label>
             <input
               type="text"
               id="fname"
               name="firstname"
-              placeholder="Your name.." />
+              placeholder="Your name.." required />
 
             <label for="lname">Last Name</label>
             <input
@@ -273,13 +269,14 @@
               type="email"
               id="mail"
               name="youremail"
-              placeholder="Your email.." />
+              placeholder="Your email.." required />
+
             <label for="question">Question</label>
             <textarea
               id="question"
               name="question"
               placeholder="Write something.."
-              style="height: 200px"></textarea>
+              style="height: 200px" required></textarea>
 
             <label for="pizza">Does pineapple belong on pizza?</label>
             <select id="pizza" name="pizza">
@@ -288,43 +285,45 @@
               <option value="no">No</option>
             </select>
 
+            <input type="hidden" name="_next"
+              value="https://danicodes1.github.io/thank_you.html">
+
             <input type="submit" value="Submit" />
           </form>
-          <form action="action_page.php">
 
-          </div>
         </div>
       </div>
+    </div>
 
-      <!-- Footer section -->
-      <div class="footer__section">
-        <div class="footer__links">
-          <a href="#home">HOME</a>
-          <a href="#about">ABOUT</a>
-          <a href="#projects">PROJECTS</a>
-          <a href="#contact">CONTACT</a>
-        </div>
-        <section class="social__media">
-          <div class="social__media--section">
-            <div class="footer__title">
-              <a href="#contact" id="footer__title">REACH OUT</a>
-            </div>
-            <div class="social__icons">
-              <a href="https://github.com/danicodes1"
-                class="social__icon--link"><i
-                  class="fab fa-github"></i></a>
-              <a
-                href="https://ca.linkedin.com/in/dani-ren"
-                class="social__icon--link"><i class="fab fa-linkedin"></i></a>
-              <a href="mailto:danirenn16@gmail.com"
-                class="social__icon--link"><i
-                  class="fa fa-envelope"></i></a>
-            </div>
-          </div>
-        </section>
+    <!-- Footer section -->
+    <div class="footer__section">
+      <div class="footer__links">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
       </div>
+      <section class="social__media">
+        <div class="social__media--section">
+          <div class="footer__title">
+            <a href="#contact" id="footer__title">REACH OUT</a>
+          </div>
+          <div class="social__icons">
+            <a href="https://github.com/danicodes1"
+              class="social__icon--link"><i
+                class="fab fa-github"></i></a>
+            <a
+              href="https://ca.linkedin.com/in/dani-ren"
+              class="social__icon--link"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:danirenn16@gmail.com"
+              class="social__icon--link"><i
+                class="fa fa-envelope"></i></a>
+          </div>
+        </div>
+      </section>
+    </div>
 
-      <!-- connect to JS -->
-      <script src="app.js"></script>
-    </body>
-  </html>
+    <!-- connect to JS -->
+    <script src="app.js"></script>
+  </body>
+</html>
